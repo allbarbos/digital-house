@@ -1,0 +1,31 @@
+p {     
+  color: tomato;
+}
+ 
+.eh-azul {
+  color: turquoise;
+}
+
+.eh-roxo {
+  color:FFD54F;
+}
+
+.eh-negrito {
+  font-weight: bold; 
+}
+
+::marker {
+  color: deeppink;
+}
+
+a { 
+  color: yellowgreen;
+}
+
+ul .eh-roxo { 
+  font-weight: bold; 
+}
+
+ul .eh-azul {
+  font-style: italic;
+}
