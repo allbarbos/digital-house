@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required maxlength="5"/>
+
+    <br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required/>
+    
+    <br><br>
+
+    <label for="panquecas">Gosta de panquecas?</label>
+    <select id="panquecas" name="panquecas">
+      <option selected disabled>Selecione</option>
+      <option value="sim">Sim</option>
+      <option value="nao">Não</option>
+      <option value="tanto-faz">Tanto faz</option>
+    </select>
+    
+    <br><br>
+
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments"></textarea>
+    
+    <br><br>
+
+    <p>Escolha um tipo de café:</p>
+    <input type="radio" id="coado" name="tipo-cafe" value="coado">
+    <label for="coado">Café coado</label><br>
+    
+    <input type="radio" id="expresso" name="tipo-cafe" value="expresso">
+    <label for="expresso">Expresso</label><br>
+    
+    <br><br>
+
+    <p>Escolha suas comidas favoritas:</p>
+    <input type="checkbox" name="comida" id="lasanha" value="lasanha">
+    <label for="lasanha">Lasanha</label><br>
+    
+    <input type="checkbox" name="comida" id="kibe" value="kibe">
+    <label for="kibe">Kibe</label><br>
+    
+    <br><br>
+
+    <button type="reset">Limpar</button>
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
