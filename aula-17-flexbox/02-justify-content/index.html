@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justify Content</title>
+  <style>
+    .filho {
+      padding: 20px;
+      background-color: lightsalmon;
+      margin: 10px;
+      width: 200px;
+    }
+
+    .pai {
+      width: 1000px;
+      margin: 20px auto;
+      border: 3px solid gray;
+      display: flex;
+      flex-wrap: wrap;
+      /* ... */
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pai">
+    <div class="filho">
+      <p>1- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet neque? Nemo accusamus, voluptatibus
+        quae
+        repudiandae harum ipsa? Laboriosam blanditiis a assumenda commodi. Eaque nesciunt, vel in cupiditate ea numquam.
+      </p>
+    </div>
+
+    <div class="filho">
+      <p>2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id reprehenderit, molestiae eius libero
+        ipsa. Voluptatem fuga, provident odit asperiores aperiam quos expedita dicta doloremque quod quis maxime
+        consequuntur molestiae?</p>
+    </div>
+
+    <div class="filho">
+      <p>3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id reprehenderit, molestiae eius libero
+        ipsa. Voluptatem fuga, provident odit asperiores aperiam quos expedita dicta doloremque quod quis maxime
+        consequuntur molestiae?</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

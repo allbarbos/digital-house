@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items</title>
+  <style>
+    .container div {
+      padding: 20px;
+      background-color: lightsalmon;
+      margin: 10px;
+      width: 100px;
+    }
+
+    .container-footer {
+      border: 3px solid gray;
+    }
+
+    .container {
+      width: 40%;
+      height: 50vh;
+      margin: 40px auto;
+      border: 3px solid gray;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item1 {
+      flex-grow: 4;
+      align-self: flex-start;
+    }
+
+    .item2 {
+      flex-grow: 1;
+    }
+
+    .item3 {
+      flex-grow: 1;
+      align-self: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item1">
+      <p>ITEM 1</p>
+    </div>
+
+    <div class="item2">
+      <p>ITEM 2</p>
+    </div>
+
+    <div class="item3">
+      <p>ITEM 3</p>
+    </div>
+  </div>
+
+  <footer>
+    bla bla
+  </footer>
+</body>
+
+</html>
