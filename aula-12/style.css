@@ -1,9 +1,14 @@
-/* body {
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
   font-size: 20px;
+}
+
+p:nth-child(1) {
+  color: turquoise;
+  font-weight: bold;
 }
 
 a {
@@ -33,4 +38,4 @@ h6 {
 
 .vermelho {
   color: crimson;
-} */
+}

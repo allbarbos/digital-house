@@ -30,16 +30,15 @@ Incluir imagem do bolo abaixo do título
 Incluir um iframe da receita
 Incluir um link para a página do Chef
 ```
-
 ---------------------------------------------------------------
 # Dever de casa
 
 ## 1. Criar mais duas receitas
 ## 2. Criar uma página inicial com a lista das receitas e a página sobre linkadas
 ## 3. Todas as páginas (receitas e sobre) devem ter um link que redirecione para a página inicial
-## 4. Configurar CSS:
+## 4. Configurar CSS pra todas as páginas:
 ```
-Família da fonte de toda a página para Arial;
+Família da fonte de toda a página para uma que você escolher no Google Fonts;
 Tamanho da fonte dos parágrafos e listas para 20 píxels;
 Título todo em maiúsculo;
 Subtítulo em itálico e cor gray;
