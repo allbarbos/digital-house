@@ -1,3 +1,19 @@
+# Parte 2
+1. Calcular o total pago em salário pela empresa
+2. Calcular a média salarial da empresa
+3. Listar o maior salário pago pela empresa
+4. Listar o menor salário pago pela empresa
+5. Listar os funcionários e a quanto tempo foi contratado
+6. Listar os funcionários do mês de abril
+7. Listar os funcionários seus cargos
+8. Listar os funcionários e o departamento ao qual pertence
+9. Listar o top 10 funcionários com o salário maior
+10. Listar a quantidade de funcionários por cargo em order decrescente
+11. Listar todos os funcionários contendo: nome completo, genero, data contratacao e cargo
+    - Se for M, escrever Masculino, se for F, escrever Feminino
+    - Data contratacao deve ter o formato dia/mes/ano
+
+# Parte 1 - Concluída
 ## 1- Criar database/schema
 
 ## 2- Criar as tabelas e seus relacionamentos
