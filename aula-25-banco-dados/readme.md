@@ -1,12 +1,24 @@
 # Parte 2
 1. Calcular o total pago em salário pela empresa
-    - Resposta: 61.678.125.784
+    - Resposta
+    ```
+    61.678.125.784
+    ```
 2. Calcular a média salarial da empresa
-    - Resposta: 63.761,2043
+    - Resposta:
+    ```
+    63.761,2043
+    ```
 3. Listar o maior salário pago pela empresa
-    - Resposta: 158.220
+    - Resposta:
+    ```
+    158.220
+    ```
 4. Listar o menor salário pago pela empresa
-    - Resposta: 38.735
+    - Resposta:
+    ```
+    38.735
+    ```
 5. Listar os funcionários e a quanto tempo foi contratado
     - Resposta inicial para ter referencia se está certo
     ```
