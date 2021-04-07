@@ -52,7 +52,16 @@
     ... outros registros ...
     ```
 9. Listar o top 10 funcionários com o salário maior
-    - Resposta: 
+    - Resposta inicial para ter referencia se está certo
+    ```
+    #	funcionario	        salario
+    1	Tokuyasu Pesch	    158.220
+    2	Xiahua Whitcomb	    155.709
+    3	Tsutomu Alameldin	155.377
+    4	Willard Baca	    154.459
+    5	Ibibia Junet	    150.345
+    ... outros registros ...
+    ```
 10. Listar a quantidade de funcionários por cargo em order decrescente
     - Resposta: 
 11. Listar todos os funcionários contendo: nome completo, genero, data contratacao e cargo
