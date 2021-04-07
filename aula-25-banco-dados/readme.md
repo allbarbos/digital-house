@@ -63,10 +63,27 @@
     ... outros registros ...
     ```
 10. Listar a quantidade de funcionários por cargo em order decrescente
-    - Resposta: 
+    ```
+    #   total_funcionarios  cargo
+    1   115.003	            Engineer
+    2   107.391	            Staff
+    3   97.750	            Senior Engineer
+    4   92.853	            Senior Staff
+    5   15.159	            Technique Leader
+    ... outros registros ...
+    ```
 11. Listar todos os funcionários contendo: nome completo, genero, data contratacao e cargo
     - Se for M, escrever Masculino, se for F, escrever Feminino
     - Data contratacao deve ter o formato dia/mes/ano
+     ```
+    #   nome_completo       genero      data_contratacao    cargo
+    1   Georgi Facello	    Masculino   26/06/1986	        Senior Engineer
+    2   Bezalel Simmel	    Feminino    21/11/1985	        Staff
+    3   Parto Bamford	    Masculino   28/08/1986	        Senior Engineer
+    4   Chirstian Koblick   Masculino   01/12/1986	        Engineer
+    5   Chirstian Koblick   Masculino   01/12/1986	        Senior Engineer
+    ... outros registros ...
+    ```
 
 # Parte 1 - Concluída
 ## 1- Criar database/schema
