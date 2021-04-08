@@ -1,7 +1,8 @@
 # configuração
 
 ```bash
-npm install mysql2 sequelize sequelize-cli path
+npm install mysql2 sequelize path
+npm install -D sequelize-cli
 
 npx sequelize init
 
