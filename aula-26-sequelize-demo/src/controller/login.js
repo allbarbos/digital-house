@@ -1,7 +1,4 @@
-const { Pessoas } = require('../models')
-
 const index = async (req, res) => {
-  const pessoas = await Pessoas.findAll()
   console.log(pessoas);
   res.render('login/index');
 }

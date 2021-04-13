@@ -5,6 +5,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const loginRouter = require('./routes/login');
+const sequelizeRouter = require('./routes/sequelize');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
+app.use('/sequelize', sequelizeRouter);
 
 app.use(function (req, res, next) {
   res.render('404')
