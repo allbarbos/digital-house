@@ -1,0 +1,20 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "ignorePatterns": [
+        "node_modules",
+        "src/public/**",
+        "src/models/index.js"
+    ],
+    "rules": {}
+}
