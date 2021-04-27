@@ -1,23 +1,32 @@
-const { Pessoas } = require('../models')
+const pessoasModel = require('../models/pessoas')
 
 const listaPessoas = async (req, res) => {
-  const pessoas = await Pessoas.findAll()
+  const pessoas = await pessoasModel.consultaTodasPessoas()
   res.json(pessoas)
 }
 
 const buscaPessoaPorId = async (req, res) => {
-  const { id } = req.params
+  try {
+    const { id } = req.params
 
-  const pessoa = await Pessoas.findOne({
-    where: {
-      id: id
-    }
-  })
+    const pessoa = await pessoasModel.consultaPorId(id)
+    res.json(pessoa)
+  } catch (err) {
+    res.json({ error: err.message })
+  }
+}
 
-  res.json(pessoa)
+const buscaPessoaAtiva = async (req, res) => {
+  try {
+    const pessoas = await pessoasModel.buscaPessoasAtiva()
+    res.json(pessoas)
+  } catch (err) {
+    res.json({ error: err.message })
+  }
 }
 
 module.exports = {
   listaPessoas,
-  buscaPessoaPorId
+  buscaPessoaPorId,
+  buscaPessoaAtiva
 }

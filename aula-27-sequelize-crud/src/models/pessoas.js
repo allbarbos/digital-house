@@ -1,23 +1,41 @@
-'use strict'
-const {
-  Model
-} = require('sequelize')
-module.exports = (sequelize, DataTypes) => {
-  class Pessoas extends Model {
-    static associate (models) {
-      Pessoas.hasMany(models.Turmas, { foreignKey: 'docente_id' })
-      Pessoas.hasMany(models.Matriculas, { foreignKey: 'estudante_id' })
-    }
-  };
+const { Pessoas } = require('../db/models')
 
-  Pessoas.init({
-    nome: DataTypes.STRING,
-    ativo: DataTypes.BOOLEAN,
-    email: DataTypes.STRING,
-    role: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'Pessoas'
+const consultaTodasPessoas = async () => {
+  const pessoas = await Pessoas.findAll({ raw: true })
+  return pessoas
+}
+
+const consultaPorId = async (id) => {
+  const pessoa = await Pessoas.findOne({
+    where: {
+      id: id
+    },
+    raw: true
   })
-  return Pessoas
+
+  if (!pessoa) {
+    throw new Error(`A pessoa com o ID ${id} não existe no banco de dados`)
+  }
+
+  return pessoa
+}
+
+const buscaPessoasAtiva = async () => {
+  const pessoas = await consultaTodasPessoas()
+
+  const pessoasAtivas = []
+
+  for (const pessoa of pessoas) {
+    if (pessoa.ativo) {
+      pessoasAtivas.push(pessoa)
+    }
+  }
+
+  return pessoasAtivas
+}
+
+module.exports = {
+  consultaTodasPessoas,
+  consultaPorId,
+  buscaPessoasAtiva
 }
